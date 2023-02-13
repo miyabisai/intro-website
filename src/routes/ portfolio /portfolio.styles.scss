@@ -25,11 +25,10 @@
     }
     &-title {
         @include page-title();
-
+        overflow-wrap: break-word;
         @include responsive($pc-width){
-            @include page-title2();
-            font-weight: 500;
-            margin-left: 1rem;
+            transform: translateX(1rem);
+            width: 80%;
         }
     }
 

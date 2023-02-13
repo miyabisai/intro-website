@@ -17,6 +17,7 @@
     width: 23rem;
     color:$first-color;
     @media screen and (max-width: $pc-width) {
+        height: 100%;
         background-color: $white-color;
     }
 }

@@ -18,7 +18,7 @@ const MobileNav = () => {
                     <Link to="/" onClick={toggleMenu}>ABOUT</Link>
                     <Link to="/resume" onClick={toggleMenu}>RESUME</Link>
                     <Link to="/portfolio" onClick={toggleMenu}>PORTFOLIO</Link>
-                    <Link to="/contact" onClick={toggleMenu}>CONTACT</Link>
+                   {/* <Link to="/contact" onClick={toggleMenu}>CONTACT</Link>*/}
                 </div>
             </div>
 

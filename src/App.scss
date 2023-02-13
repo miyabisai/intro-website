@@ -1,4 +1,5 @@
 @import "./assets/utils/reset.scss";
+@import "./assets/util.styles.scss";
 
 $font-color: #000;
 $first-color: #004ca3;
@@ -34,6 +35,11 @@ $white-color: #fff;
   width: 80%;
   margin: 0 auto;
   padding: 4rem 0;
+
+  @include responsive($pc-width){
+    margin-right: 0px;
+    margin-left:1.25rem;
+  }
 }
 
 

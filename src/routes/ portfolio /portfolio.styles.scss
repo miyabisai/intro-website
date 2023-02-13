@@ -28,6 +28,8 @@
 
         @include responsive($pc-width){
             @include page-title2();
+            font-weight: 500;
+            margin-left: 1rem;
         }
     }
 

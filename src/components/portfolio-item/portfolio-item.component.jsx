@@ -6,7 +6,7 @@ import { ReactComponent as GitRepo } from '../../assets/icons8-github.svg';
 
 import './portfolio-item.styles.scss';
 
-const PortfolioItem = ({ imgSrc, repoLink, webLink }) => {
+const PortfolioItem = ({ imgSrc, repoLink, webLink,text }) => {
     const [hovered, setHovered] = useState(false);
     useEffect(()=>{
         if(window.innerWidth<941){
@@ -36,12 +36,12 @@ const PortfolioItem = ({ imgSrc, repoLink, webLink }) => {
                             exit={{ opacity: 0 }}
                         >
                             <div className='portfolio-item-shield-link' >
-                                <a href="www.google.com">
+                                <a href={repoLink} target="_blank">
                                     <GitRepo className='git-repo' />
                                 </a>
                             </div>
                             <div className='portfolio-item-shield-link'>
-                                <a href={repoLink}>
+                                <a href={webLink} target="_blank">
                                     <WebLink className='web-link' />
                                 </a>
                             </div>
@@ -49,7 +49,7 @@ const PortfolioItem = ({ imgSrc, repoLink, webLink }) => {
                 }
             </div>
             <div className="portfolio-item-text">
-                <p>ext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                <p>{text}</p>
             </div>
         </div>
     )

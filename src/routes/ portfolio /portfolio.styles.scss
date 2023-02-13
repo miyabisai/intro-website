@@ -8,11 +8,12 @@
     font-size: 1.3rem;
     min-height: 100%;
     &-container {
-        flex-direction: column;
+        // @include border();
         width: 80%;
         
         // background-color: #ddd;
         display: flex;
+        flex-direction: column;
         margin: 0 auto;
         padding: 4rem 0;
         // @include border();
@@ -31,7 +32,9 @@
     }
 
     &-block{
+        // @include border();
         display: flex;
+        flex-wrap:wrap;
         justify-content: space-between;
         @include responsive($pad-width){
             flex-direction: column;

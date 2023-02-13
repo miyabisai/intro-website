@@ -1,0 +1,51 @@
+$font-color: #000;
+$first-color: #004ca3;
+$first-color-hover:rgba(0,76,163,0.8);
+$second-color: #eff6ff;
+$gray-text-color: #6b7280d9;
+$white-color: #fff;
+
+@mixin border {
+  border: 1px solid #000;
+}
+@mixin article-text {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+}
+
+@mixin page-title2 {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  font-weight: 400;
+}
+
+@mixin  page-title {
+  font-size: 4rem;
+  line-height: 8rem;
+  font-weight: 500;
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+
+
+body {
+  font-family: "M PLUS 1p", arial, helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $font-color;
+  box-sizing: content-box;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: $font-color;
+    }
+  }
+}

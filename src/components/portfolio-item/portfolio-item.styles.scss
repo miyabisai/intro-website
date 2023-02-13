@@ -1,0 +1,64 @@
+@import "../../App.scss";
+@import "../../assets/util.styles.scss";
+
+.portfolio-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    background-color: $white-color;
+    border-radius: 10px;
+    height: 22rem;
+    width: 50%;
+    @include responsive($pad-width){
+        width: 100%;
+    }
+    margin: 1rem 1rem;
+
+    &-shield{
+        position: absolute;
+        display: flex;
+        top:0;
+        left:0;
+        height: calc(22rem - 5rem);
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        
+        &-link{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           .web-link{
+                width: 6rem;
+                height: auto; 
+                opacity: 0.8;             
+            }
+            .git-repo{
+                opacity: 0.8;   
+            }
+        }
+      
+
+    }
+    &-text {
+        border-radius: 0px 0px 10px 10px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        min-height: 4rem;
+        color: #2d2d2d;
+    }
+
+    &-img {
+        // @include border();
+        height: 100%;
+        width: auto;
+        border-bottom:1px solid #cfd9e0;
+        border-radius: 10px 10px 0px 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}

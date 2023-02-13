@@ -1,0 +1,43 @@
+@import '../../App.scss';
+@import '../../assets/util.styles.scss';
+
+
+.portfolio{
+    background-color: $second-color; 
+    color: $first-color;
+    font-size: 1.3rem;
+    min-height: 100%;
+    &-container {
+        flex-direction: column;
+        width: 80%;
+        
+        // background-color: #ddd;
+        display: flex;
+        margin: 0 auto;
+        padding: 4rem 0;
+        // @include border();
+        @include responsive($pc-width){
+            width: 90%;
+            margin: 0;
+            
+        }     
+    }
+    &-title {
+        @include page-title();
+
+        @include responsive($pc-width){
+            @include page-title2();
+        }
+    }
+
+    &-block{
+        display: flex;
+        justify-content: space-between;
+        @include responsive($pad-width){
+            flex-direction: column;
+        }
+    }
+
+
+
+}

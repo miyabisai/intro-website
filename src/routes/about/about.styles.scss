@@ -1,0 +1,29 @@
+@import '../../App.scss';
+@import "../../assets/util.styles.scss";
+
+.about{
+    background-color:$second-color;
+    color: $first-color;
+    min-height: 100%;
+    &-container{
+        @include container();
+    }
+    
+
+
+    .content{
+        width:80%;
+    }
+
+   
+
+    p{
+        // width: 80%;
+        text-align: justify;
+        @include article-text();
+    }
+}
+
+h1.page-title{
+    @include page-title(); 
+}

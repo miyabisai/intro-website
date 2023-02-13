@@ -1,0 +1,56 @@
+@import "../../assets/util.styles.scss";
+@import "../../App.scss";
+
+$border-color: rgba(34, 34, 34, 0.1);
+
+.container {
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nav {
+    // @include border();
+    background-color: $second-color;
+    font-size: 1.5rem;
+    min-height: 100%;
+    @media screen and (max-width: $pc-width) {
+        width: 2.5rem;
+    }
+}
+
+$buttom-size-pc: 4rem;
+$buttom-size-mobile: 3rem;
+.back-top-buttom {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    height: $buttom-size-pc;
+    width: $buttom-size-pc;
+    border-radius: 50%;
+    bottom: $buttom-size-pc;
+    right: $buttom-size-pc;
+    // background-color: #ddd;
+    @media screen and (max-width: $pc-width) {
+        height: $buttom-size-mobile;
+        width: $buttom-size-mobile;
+        bottom: $buttom-size-mobile;
+        right: 1rem;
+    }
+
+    .st0 {
+        fill: $first-color !important;
+    }
+
+    &:hover,&:active {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        .st0 {
+            fill: $first-color-hover !important;
+        }
+    }
+}

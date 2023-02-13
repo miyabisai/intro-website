@@ -1,0 +1,88 @@
+@import "../../assets/util.styles.scss";
+@import "../../App.scss";
+
+.resume {
+    // height: 100%;
+    background-color: $second-color;
+    color: $first-color;
+    font-size: 1.3rem;
+    &-container {
+       @include container();
+    }
+
+    &-title {
+        @include page-title2();
+    }
+
+    &-subtitle {
+        font-size: 1.5rem;
+    }
+
+    &-block {
+        // @include border();
+
+        //  width: 70%;
+    }
+
+    &-article {
+        @include article-text();
+    }
+
+    
+}
+
+.skill {
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    background-color: $first-color;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+    margin-right: 5px;
+    @media screen and (max-width: $pc-width) {
+        margin-top: 2px;
+    }
+}
+
+
+.certification {
+    list-style-type: square !important;
+    display: block;
+    font-size: 1.2rem;
+    // @include border();
+    padding-left: 2rem;
+}
+
+.career{
+    &-container{
+        .company-name{
+            font-size: 1.3rem;
+            margin-bottom: 1.3rem;
+        }
+    }
+}
+
+.education{
+    font-size:1.5rem;
+    cursor: pointer;
+    li{
+        margin-bottom: 0.8rem;
+    }
+    a{
+        color: $first-color;
+        span{
+            font-weight: 300;
+            font-size: 1.2rem;
+            display: block;
+            text-indent: 1rem;
+            @media screen and (max-width: $pc-width) {
+                text-indent: 0.5rem;
+            }
+            line-height: 1.5rem;
+        }
+        &:visited{
+            color: $first-color;
+        }
+    }
+}
+

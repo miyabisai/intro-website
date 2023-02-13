@@ -1,0 +1,165 @@
+@import '../../App.scss';
+@import '../../assets/util.styles.scss';
+
+$border-width: 2px;
+$border-color: #000;
+$container-width: 2.5rem;
+$menu-width: 1rem;
+$menu-height: 10px;
+
+.menu-button-container {
+    position: relative;
+}
+
+.menu-word {
+    font-family: 'Ubuntu';
+    font-weight: border;
+    margin-top: 50px;
+    transform: rotate(-90deg);
+    font-size: 1rem;
+    text-indent: 0;
+}
+
+.burgermenu-container {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $container-width;
+    height: $container-width;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid #000;
+}
+.burgermenu {
+    border: none;
+    background: none;
+    width: $menu-width;
+    height: $menu-width;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    margin-left: -25px;
+    margin-top: -25px;
+    padding: 0;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    outline: none;
+}
+.burgermenu:hover {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+.burgermenu span {
+    display: block;
+    width: 120%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-top: $border-width solid $border-color;
+    transform: translateY(22px);
+    transition: transform 0.5s ease, border-color 0.5s ease 0.3s;
+}
+.burgermenu span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $border-width;
+    background: $border-color;
+    transform: translateY(-22px);
+    animation-name: topLineBurger;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
+}
+.burgermenu span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $border-width;
+    background: $border-color;
+    transform: translateY(22px);
+    animation-name: bottomLineBurger;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
+}
+.burgermenu.opened span {
+    border-color: transparent;
+    transition: border-color 0.3s ease;
+}
+.burgermenu.opened span:before {
+    animation-name: topLineCross;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
+}
+.burgermenu.opened span:after {
+    animation-name: bottomLineCross;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes topLineCross {
+    0% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+
+@keyframes bottomLineCross {
+    0% {
+        transform: translateY(4px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px) rotate(-45deg);
+    }
+}
+
+@keyframes topLineBurger {
+    0% {
+        transform: translateY(0px) rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY(-8px) rotate(0deg);
+    }
+}
+
+@keyframes bottomLineBurger {
+    0% {
+        transform: translateY(0px) rotate(-45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY(4px) rotate(0deg);
+    }
+}
+
+// thanks for https://codepen.io/mariusnohr/pen/xxMqGg

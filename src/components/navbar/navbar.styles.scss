@@ -1,0 +1,193 @@
+@import '../../assets/util.styles.scss';
+@import '../../App.scss';
+
+@mixin border {
+    // border: 1px #ddd solid;
+}
+.d-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.js-content {
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 23rem;
+    color:$first-color;
+    @media screen and (max-width: $pc-width) {
+        background-color: $white-color;
+    }
+}
+.nav-content {
+    height: 80vh;
+    min-height: 500px;
+    margin: 1.25rem auto;
+    padding: 1.5rem;
+    @extend .d-column;
+    @extend .js-content;
+    .title {
+        @include border();
+        margin-top: 5rem;
+        margin-bottom: 1.25rem;
+        h1 {
+            // @include border();
+            font-family: "Train One";
+            display: block;
+            word-spacing: 1.5rem;
+            font-size: 5rem;
+            text-align:center;
+        }
+
+        .occupation {
+            font-size: 1rem;
+            text-align: center;
+            line-height: 2rem;
+            font-weight: 900;
+            // padding-right: 3.5rem;
+
+            @media screen and (max-width: $pc-width) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+.link-container{
+    max-width: 100%;
+}
+
+.link-group {
+    @extend .d-column;
+    @include border();
+    // padding-top: 1.25rem;
+    padding-bottom: 3rem;
+    position: relative;
+    div{
+        // @include border();
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        position: relative;
+     
+        // border-color: aqua;
+        &:hover{
+            cursor: pointer;
+            // background-color:#ddd;
+            // &::before{
+            //     display: flex;
+            //     justify-content: center;
+            //     content: '';
+            //     background-image: url(../../assets/pointer.svg);
+            //     transform: rotate(90deg);
+            //     background-size: contain 90%;
+            //     background-repeat:no-repeat;
+            //     position: absolute;
+            //     top:0.3rem;
+            //     height:4rem;
+            //     width: 4rem;
+            //     // left:2rem;
+            //     @include border();
+            // }
+        }
+        a {
+            display: block;
+            justify-content: center;
+            margin-left: 5rem;
+            font-weight: 900;
+            line-height: 4rem;
+            height: 4rem;
+            width: 100%;
+            color:$first-color !important;
+
+            &:visited{
+                color:$first-color !important;
+            }
+        }     
+        
+    }
+
+    // .pointed{
+    //     &::before{
+    //         display: flex;
+    //         justify-content: center;
+    //         content: '';
+    //         background-image: url(../../assets/pointer.svg);
+    //         transform: rotate(90deg) translate(0rem,5rem) ;
+    //         background-size: contain 100%;
+        
+    //         background-repeat:no-repeat;
+    //         position: absolute;
+    //         top:0.5rem;
+    //         height:4rem;
+    //         width: 4rem;
+    //         // left:2rem;
+    //         @include border();
+    //     }
+    // }
+ 
+}
+
+.pointed{
+    top:10.5rem;
+    transform: rotate(90deg) translateX(-0.5rem);
+    // border: 1px solid #000;
+    position:absolute;
+    // top:0rem;
+    left:1rem;
+    animation:1.5s pointerMove ;
+    animation-iteration-count:10;
+}
+
+.pointed:hover{
+    // transform: rotate(180deg);
+    animation:1.5s pointerMove ;
+    animation-iteration-count:infinite;
+}
+
+@keyframes pointerMove {
+    0%{
+        rotate:(90deg) translateX(0);
+       
+    }
+    20%, 50%, 80%, 100% {
+        transform: rotate(90deg) translateX(0);
+        
+    }
+	40% {transform: rotate(90deg) translateX(-30px);}
+	60% {transform: rotate(90deg) translateX(-15px);}
+}
+
+@media screen and (min-width: $pc-width) {
+    .hide-navbar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:$pc-width) {
+
+
+    .navbar {
+        padding: 0;
+       
+    }
+    .nav-content{
+        display: none;
+    }
+    .hide-navbar{
+   
+        display: block;
+        @include border();
+       
+        height:100vh;
+        width: 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+}

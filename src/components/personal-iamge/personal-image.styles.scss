@@ -1,20 +1,20 @@
-@mixin  border {
-    border: 1px solid #000;
-}
+@import "../../App.scss";
 
-.personal-image{
-    
-    opacity:0.8;
+.personal-image {
+    opacity: 0.8;
     // @include  border();
     width: 300px;
     height: 300px;
-   
-    img{
-       width: 100%;
-       height: 100%;
-       object-fit: center;
-       border-radius: 50% 50% 49% 51% / 60% 62% 38% 40%;
-       box-shadow:  rgb(0 76 163/ 50%) 0px 0px 16px 6px;
-      
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: center;
+        border-radius: 50% 50% 49% 51% / 60% 62% 38% 40%;
+        box-shadow: rgb(0 76 163/ 50%) 0px 0px 16px 6px;
+        @include responsive($pc-width) {
+            width: 90%;
+            height: 90%;
+        }
     }
 }

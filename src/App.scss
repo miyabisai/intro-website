@@ -38,12 +38,9 @@ $white-color: #fff;
 
   @include responsive($pc-width){
     margin-right: 0px;
-    margin-left:1.25rem;
+    margin-left:1.5rem;
   }
 }
-
-
-
 body {
   font-family: "M PLUS 1p", arial, helvetica, sans-serif;
   font-weight: 300;

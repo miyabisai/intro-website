@@ -7,16 +7,14 @@
     min-height: 100%;
     &-container{
         @include container();
+        @include responsive($pc-width){
+            width: 90%;
+            // margin-left:1.5rem
+        }
     }
-    
-
-
     .content{
         width:80%;
     }
-
-   
-
     p{
         // width: 80%;
         text-align: justify;

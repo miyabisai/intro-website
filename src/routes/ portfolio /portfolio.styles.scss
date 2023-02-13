@@ -1,47 +1,38 @@
-@import '../../App.scss';
-@import '../../assets/util.styles.scss';
+@import "../../App.scss";
+@import "../../assets/util.styles.scss";
 
-
-.portfolio{
-    background-color: $second-color; 
+.portfolio {
+    background-color: $second-color;
     color: $first-color;
     font-size: 1.3rem;
     min-height: 100%;
     &-container {
-        // @include border();
         width: 80%;
-        
-        // background-color: #ddd;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         padding: 4rem 0;
-        // @include border();
-        @include responsive($pc-width){
-            width: 90%;
+        @include responsive($pc-width) {
+            width: 85%;
             margin: 0;
-            
-        }     
+        }
     }
     &-title {
         @include page-title();
         overflow-wrap: break-word;
-        @include responsive($pc-width){
+        @include responsive($pc-width) {
+            font-size: 3.75rem;
             transform: translateX(1rem);
-            width: 80%;
+            width: 70%;
         }
     }
 
-    &-block{
-        // @include border();
+    &-block {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
-        @include responsive($pad-width){
+        @include responsive($pad-width) {
             flex-direction: column;
         }
     }
-
-
-
 }

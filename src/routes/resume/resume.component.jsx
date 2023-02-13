@@ -73,7 +73,7 @@ const Resume = () => {
                             </ul>
                         </div>
                         <div className="certification-container">
-                            <h3 className="resume-subtitle">言語:</h3>
+                            <h3 className="resume-subtitle">語学</h3>
                             <ul className="certification">
                                 <li>JLPT N1</li>
                                 <li>TOEIC 720点</li>

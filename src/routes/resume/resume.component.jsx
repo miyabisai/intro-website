@@ -23,8 +23,8 @@ const Resume = () => {
                     <div className="resume-article">
                         <div className="skill-container">
                             <h3 className="resume-subtitle">言語：</h3>
-                            <span className="skill">Javascript</span>
-                            <span className="skill">Typescript</span>
+                            <span className="skill">JavaScript</span>
+                            <span className="skill">TypeScript</span>
                             <span className="skill">Python</span>
                             <span className="skill">SQL</span>
                             <span className="skill">SCSS</span>
@@ -141,8 +141,8 @@ const Resume = () => {
                             <CareerItem
                                 projectName="フルスタックエンジニア"
                                 occupation="通話と業務システム"
-                                skills={<p>jQuery、css、php、SQL、AWS RDS database<br />
-                                    AWS lambda、AWS EC2、AWS Connect</p>}
+                                skills={<p>JQuery、CSS、PHP、SQL、AWS RDS Database<br />
+                                    AWS Lambda、AWS EC2、AWS Connect</p>}
                                 achievement={<div style={achievementStyle}>
                                     <ul style={listStyle}>
                                         <li>担当チームが未経験な技術を調査と報告。</li>
@@ -191,7 +191,7 @@ const Resume = () => {
                                 business="EC"
                                 projectName="ECサイト、CSMシステムメンテンスなど"
                                 occupation="フルスタックエンジニア"
-                                skills="PHP、Javascript、jQuery、css、MySQL、GitHub"
+                                skills="PHP、Javascript、JQuery、CSS、MySQL、GitHub"
                                 achievement={<div style={achievementStyle}>
                                     <ul style={listStyle}>
                                         <li>海外向けのECサイを立ち上げ、スムーズに稼働できました。</li>
@@ -210,7 +210,7 @@ const Resume = () => {
                                 business="自社開発"
                                 projectName="クレジットカート基幹システム"
                                 occupation="フルスタックエンジニア"
-                                skills="C#、SQLSever、jQuery、css"
+                                skills="C#、SQLSever、JQuery、CSS"
                                 achievement={<div style={achievementStyle}>
                                     <ul style={listStyle}>
                                         <li>PGとして業務に携わりました。</li>

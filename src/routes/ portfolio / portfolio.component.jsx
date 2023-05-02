@@ -2,9 +2,6 @@ import TestComponent from "../../components/test-component/testComponent.compone
 import { motion } from 'framer-motion';
 
 import PortfolioItem from "../../components/portfolio-item/portfolio-item.component";
-// import {project1} from '../../../assets/portfolio/project1.png';
-import project1 from '../../assets/portfolio/project1.png';
-
 import production1 from '../../assets/portfolio/info-web.png';
 import production2 from '../../assets/portfolio/word-card.png';
 import production3 from '../../assets/portfolio/manager-system.png';

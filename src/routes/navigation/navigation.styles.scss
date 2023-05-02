@@ -40,7 +40,7 @@ $buttom-size-mobile: 3rem;
         height: $buttom-size-mobile;
         width: $buttom-size-mobile;
         bottom: $buttom-size-mobile;
-        right: 1rem;
+        right: 3.5rem;
     }
 
     .st0 {
@@ -49,6 +49,9 @@ $buttom-size-mobile: 3rem;
 
     &:hover,&:active {
         background-color: rgba($color: #fff, $alpha: 0.8);
+        @media screen and (max-width: $pc-width) {
+            background-color:transparent;
+        }
         .st0 {
             fill: $first-color-hover !important;
         }

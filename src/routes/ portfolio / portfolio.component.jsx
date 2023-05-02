@@ -52,21 +52,22 @@ const Portfolio = () => {
                             repoLink="https://github.com/miyabisai/glasses-eshop"
                             text="ECサート画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
                         />
-
-                        <PortfolioItem
-                            imgSrc={production6}
-                            repoLink="https://github.com/miyabisai/ecomm-api"
-                            text="ECサイトのバックエンドを作ってみました。使用する技術はNodejs、mongodb。"
-                        />
-                    </div>
-                    <h1 className="gener-title">Nodejs</h1>
-                    <div className="gener-block">
                         <PortfolioItem
                             imgSrc={production5}
                             webLink="https://miyabisai.github.io/art-exhibition/"
                             repoLink="https://github.com/miyabisai/art-exhibition"
                             text="LP画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
                         />
+
+                    </div>
+                    <h1 className="gener-title">Nodejs</h1>
+                    <div className="gener-block">
+                        <PortfolioItem
+                            imgSrc={production6}
+                            repoLink="https://github.com/miyabisai/ecomm-api"
+                            text="ECサイトのバックエンドを作ってみました。使用する技術はNodejs、mongodb。"
+                        />
+
                     </div>
                     <h1 className="gener-title">Python </h1>
                     <div className="gener-block">

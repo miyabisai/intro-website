@@ -21,49 +21,57 @@ const Portfolio = () => {
             >
                 <h1 className="portfolio-title responsive">PORTFOLIO</h1>
                 <div className="portfolio-block">
-                    <PortfolioItem
-                        imgSrc={production1}
-                        webLink="https://linmiya.online"
-                        repoLink="https://github.com/miyabisai/intro-website"
-                        text="職歴を描くポートフォリオサート。使用する技術はReact。"
-                        
-                    />
-                    <PortfolioItem
-                        imgSrc={production2}
-                        webLink="https://celebrated-parfait-44b726.netlify.app/"
-                        repoLink="https://github.com/miyabisai/word-card"
-                        text="語学の学習スピードを上げるために作られた単語カードサービス。使用する技術はReact、firebase。"
-                    />
-                    <PortfolioItem
-                        imgSrc={production3}
-                        webLink="https://rainbow-cactus-91baca.netlify.app/"
-                        repoLink="https://github.com/miyabisai/manager-system-design"
-                        text="画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                    />
-                    <PortfolioItem
-                        imgSrc={production4}
-                        webLink="https://miyabisai.github.io/glasses-eshop/"
-                        repoLink="https://github.com/miyabisai/glasses-eshop"
-                        text="ECサート画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                    />
+                    <h1 className="gener-title">React</h1>
+                    <div className="gener-block">
+                        <PortfolioItem
+                            imgSrc={production1}
+                            webLink="https://linmiya.online"
+                            repoLink="https://github.com/miyabisai/intro-website"
+                            text="職歴を描くポートフォリオサート。使用する技術はReact。"
 
-
-                    <PortfolioItem
-                        imgSrc={production5}
-                        webLink="https://miyabisai.github.io/art-exhibition/"
-                        repoLink="https://github.com/miyabisai/art-exhibition"
-                        text="LP画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                    />
-                    <PortfolioItem
-                        imgSrc={production6}
-                        repoLink="https://github.com/miyabisai/ecomm-api"
-                        text="ECサイトのバックエンドを作ってみました。使用する技術はNodejs、mongodb。"
-                    />
-                    <PortfolioItem
-                        imgSrc={production6}
-                        repoLink="https://github.com/miyabisai/stock-crawler"
-                        text="ストッククローラーを作ってみますた。使用する技術はpython。"
-                    />
+                        />
+                        <PortfolioItem
+                            imgSrc={production2}
+                            webLink="https://celebrated-parfait-44b726.netlify.app/"
+                            repoLink="https://github.com/miyabisai/word-card"
+                            text="語学の学習スピードを上げるために作られた単語カードサービス。使用する技術はReact、firebase。"
+                        />
+                    </div>
+                    <h1 className="gener-title">Layout</h1>
+                    <div className="gener-block">
+                    
+                        <PortfolioItem
+                            imgSrc={production3}
+                            webLink="https://rainbow-cactus-91baca.netlify.app/"
+                            repoLink="https://github.com/miyabisai/manager-system-design"
+                            text="画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                        />
+                        <PortfolioItem
+                            imgSrc={production4}
+                            webLink="https://miyabisai.github.io/glasses-eshop/"
+                            repoLink="https://github.com/miyabisai/glasses-eshop"
+                            text="ECサート画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                        />
+                        <PortfolioItem
+                            imgSrc={production5}
+                            webLink="https://miyabisai.github.io/art-exhibition/"
+                            repoLink="https://github.com/miyabisai/art-exhibition"
+                            text="LP画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                        />
+                        <PortfolioItem
+                            imgSrc={production6}
+                            repoLink="https://github.com/miyabisai/ecomm-api"
+                            text="ECサイトのバックエンドを作ってみました。使用する技術はNodejs、mongodb。"
+                        />
+                    </div>
+                    <h1 className="gener-title">Python </h1>
+                    <div className="gener-block">
+                        <PortfolioItem
+                            imgSrc={production6}
+                            repoLink="https://github.com/miyabisai/stock-crawler"
+                            text="ストッククローラーを作ってみますた。使用する技術はpython。"
+                        />
+                    </div>
                 </div>
             </motion.div>
         </div>

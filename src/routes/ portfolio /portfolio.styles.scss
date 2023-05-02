@@ -28,11 +28,35 @@
     }
 
     &-block {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @include responsive($pad-width) {
-            flex-direction: column;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // @include responsive($pad-width) {
+        //     flex-direction: column;
+        // }
+    }
+    .gener{
+        &-title{
+            font-size: 2rem;
+            text-indent: 2rem;
+            margin-top: 2rem;
+            display: inline-block;
+            color:rgba($color: $first-color, $alpha: 0.8);
+            // text-shadow: 3px 3px 0 rgba(0,76,163,0.8); 
+            text-shadow:
+                        2px 2px 0 rgba(0,76,163,0.3);                     
+            font-weight: 600;
+            display: flex;
+        }
+        &-block{
+            // border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include responsive($pad-width) {
+                flex-direction: column;
+            }
         }
     }
+    
 }

@@ -1,4 +1,4 @@
-import TestComponent from "../../components/test-component/testComponent.component";
+
 import { motion } from 'framer-motion';
 
 import PortfolioItem from "../../components/portfolio-item/portfolio-item.component";
@@ -24,11 +24,11 @@ const Portfolio = () => {
                     <h1 className="gener-title">React</h1>
                     <div className="gener-block">
                         <PortfolioItem
+                            initial="false"
                             imgSrc={production1}
                             webLink="https://linmiya.online"
                             repoLink="https://github.com/miyabisai/intro-website"
                             text="職歴を描くポートフォリオサート。使用する技術はReact。"
-
                         />
                         <PortfolioItem
                             imgSrc={production2}
@@ -37,33 +37,36 @@ const Portfolio = () => {
                             text="語学の学習スピードを上げるために作られた単語カードサービス。使用する技術はReact、firebase。"
                         />
                     </div>
-                    <h1 className="gener-title">Layout</h1>
-                    <div className="gener-block">
+                </div>
+                <h1 className="gener-title">Layout</h1>
+                <div className="gener-block">
 
-                        <PortfolioItem
-                            imgSrc={production3}
-                            webLink="https://rainbow-cactus-91baca.netlify.app/"
-                            repoLink="https://github.com/miyabisai/manager-system-design"
-                            text="画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                        />
-                        <PortfolioItem
-                            imgSrc={production4}
-                            webLink="https://miyabisai.github.io/glasses-eshop/"
-                            repoLink="https://github.com/miyabisai/glasses-eshop"
-                            text="ECサート画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                        />
-                        <PortfolioItem
-                            imgSrc={production5}
-                            webLink="https://miyabisai.github.io/art-exhibition/"
-                            repoLink="https://github.com/miyabisai/art-exhibition"
-                            text="LP画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
-                        />
+                    <PortfolioItem
+                        imgSrc={production3}
+                        webLink="https://rainbow-cactus-91baca.netlify.app/"
+                        repoLink="https://github.com/miyabisai/manager-system-design"
+                        text="画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                    />
 
-                    </div>
-                    <h1 className="gener-title">Nodejs</h1>
+                    <PortfolioItem
+                        imgSrc={production4}
+                        webLink="https://miyabisai.github.io/glasses-eshop/"
+                        repoLink="https://github.com/miyabisai/glasses-eshop"
+                        text="ECサート画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                    />
+                    <PortfolioItem
+                        imgSrc={production5}
+                        webLink="https://miyabisai.github.io/art-exhibition/"
+                        repoLink="https://github.com/miyabisai/art-exhibition"
+                        text="LP画面レイアウトの練習。使用する技術はhtml、SCSS、gulp。"
+                    />
+
+                </div>
+                <h1 className="gener-title">Nodejs</h1>
                     <div className="gener-block">
                         <PortfolioItem
                             imgSrc={production6}
+                            webLink=""
                             repoLink="https://github.com/miyabisai/ecomm-api"
                             text="ECサイトのバックエンドを作ってみました。使用する技術はNodejs、mongodb。"
                         />
@@ -73,11 +76,12 @@ const Portfolio = () => {
                     <div className="gener-block">
                         <PortfolioItem
                             imgSrc={production6}
+                            webLink=""
                             repoLink="https://github.com/miyabisai/stock-crawler"
                             text="ストッククローラーを作ってみますた。使用する技術はpython。"
                         />
                     </div>
-                </div>
+                   
             </motion.div>
         </div>
     )

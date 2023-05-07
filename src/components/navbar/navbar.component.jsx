@@ -2,7 +2,8 @@ import { Fragment, useState, useEffect, useMemo } from "react";
 import BurgerMenu from "../burger/burger.component";
 import NavLink from "../nav-link/nav-link.component";
 import Pointer from "../pointer/pointer.component";
-import Contact from "../../routes/catact/contact.component";
+import Contact from "../../routes/contact/contact.component";
+
 
 
 import "./navbar.styles.scss";

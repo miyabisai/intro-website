@@ -1,0 +1,72 @@
+
+@import '../../App.scss';
+@import "../../assets/util.styles.scss";
+
+.contact{
+    background-color:$second-color;
+    color: $first-color;
+    min-height: 100%;
+    &-container{
+        @include container();      
+      
+        
+    }
+    &-title{
+        @include page-title();
+        overflow-wrap: break-word;
+        @include responsive($pc-width) {
+            font-size: 3.75rem;
+            transform: translateX(1rem);
+            width: 70%;
+        }
+    }
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    max-width: 80%;
+    height: 100%;
+    @include responsive($pc-width) {
+        padding-left: 2rem;
+    }
+   
+    svg{
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include responsive($pc-width) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    
+    }
+   
+}
+// .icon{
+   
+//     a{
+//         border:1px solid #000;
+//         width: 200px;
+//     }
+// }
+
+.icon-size{
+    width: 10rem;
+    height: 10rem;
+    @include responsive($pc-width){
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.image-size{
+    width: 8rem;
+    height: 8rem;
+    @include responsive($pc-width){
+        width: 6rem;
+        height: 6rem;
+    }
+}

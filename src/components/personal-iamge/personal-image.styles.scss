@@ -11,7 +11,7 @@
         height: 100%;
         object-fit: center;
         // border-radius: 50% 50% 49% 51% / 60% 62% 38% 40%;
-        border-radius: 50% 50% ;
+        border-radius: 25% 25% 25% 25%;
         box-shadow: rgb(0 76 163/ 50%) 0px 0px 16px 6px;
         @include responsive($pc-width) {
             width: 90%;

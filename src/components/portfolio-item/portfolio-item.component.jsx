@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 import { motion } from "framer-motion";
-
+import { Link } from 'react-router-dom';
 import { ReactComponent as WebLink } from '../../assets/icon-link.svg';
 import { ReactComponent as GitRepo } from '../../assets/icons8-github.svg';
 
@@ -26,7 +26,7 @@ const PortfolioItem = ({ imgSrc, repoLink, webLink,text }) => {
             <div
                 style={{ backgroundImage: `url(${imgSrc})` }}
                 className={`portfolio-item-img`}
-                animate={{ x: 100 }} initial={false}
+                animate={{ x: 100 }} 
             >
                 {
                     hovered? <motion.div
@@ -36,16 +36,16 @@ const PortfolioItem = ({ imgSrc, repoLink, webLink,text }) => {
                             exit={{ opacity: 0 }}
                         >
                             <div className='portfolio-item-shield-link' >
-                                <a href={repoLink} target="_blank">
+                                <Link to={repoLink} target="_blank">
                                     <GitRepo className='git-repo' />
-                                </a>
+                                </Link>
                             </div>
                             <div className='portfolio-item-shield-link'>
-                                <a href={webLink} target="_blank">
+                                <Link to={webLink} target="_blank">
                                     <WebLink className='web-link' />
-                                </a>
+                                </Link>
                             </div>
-                        </motion.div> : null
+                        </motion.div> : undefined
                 }
             </div>
             <div className="portfolio-item-text">

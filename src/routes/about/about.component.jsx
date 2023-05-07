@@ -17,8 +17,8 @@ const About = () => {
                     <PersonalImage />
                 </div>
                 <div className="content">
-                    <h1 class="page-title">ABOUT ME</h1>
-                    <p class="about-text">
+                    <h1 className="page-title">ABOUT ME</h1>
+                    <p className="about-text">
                         私は6年ほどエンジニアとしての経験を持っています。自社開発、ECサイト運営、Slerなど、様々な職種を経験して参りました。
                         データベースからWebアプリケーションまで幅広い開発経験を持ち、HTML、CSS、JavaScriptなどのWeb開発技術に熟練しており、クラウドサービスやデータベースに関するタスクの経験もあります。
                         効率的で信頼性の高いコードを書くことができ、チームの一員として様々なプロジェクトに携わっておりました。語学力も活用し、幅広い情報源から情報を集めて技術についての解決策を見出すことができます。

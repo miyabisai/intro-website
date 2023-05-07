@@ -1,0 +1,55 @@
+@import "../../App.scss";
+@import "../../assets/util.styles.scss";
+
+.project {
+    &-container {
+        .project-item {
+            body {
+                color: blue;
+            }
+
+            display: flex;
+            @media screen and (max-width:$pc-width) {
+               flex-direction: column;
+            }
+            li {
+                margin: 5px 0;
+                // @include border();
+            }
+            .name {
+                // @include border();
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #dee8fc;
+                opacity: 0.9;
+                width: 20%;
+                @media screen and (max-width:$pc-width) {
+                    justify-content: left;
+                    padding:0.5rem 0 0.5rem 1rem;
+                    width: 95%;
+                 }
+        
+            }
+            .content {
+                // @include border();
+                padding: 0 1rem;
+                width: 80%;
+                @media screen and (max-width:$pc-width) {
+                    justify-content: left;
+                    padding-left:0.5rem;
+                    width: 90%;
+                 }
+            }
+
+        }
+    }
+    hr {
+        margin-bottom: 3rem;
+        height: 1px;
+        background-color:#9fbffc;
+        border: none;
+    }
+}
+
+

@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 import PortfolioItem from "../../components/portfolio-item/portfolio-item.component";
-import production1 from '../../assets/portfolio/info-web.png';
+import production1 from '../../assets/portfolio/info-web-v2.png';
 import production2 from '../../assets/portfolio/word-card.png';
 import production3 from '../../assets/portfolio/manager-system.png';
 import production4 from '../../assets/portfolio/eshop.png';

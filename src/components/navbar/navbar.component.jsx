@@ -2,6 +2,7 @@ import { Fragment, useState, useEffect, useMemo } from "react";
 import BurgerMenu from "../burger/burger.component";
 import NavLink from "../nav-link/nav-link.component";
 import Pointer from "../pointer/pointer.component";
+import Contact from "../../routes/catact/contact.component";
 
 
 import "./navbar.styles.scss";
@@ -44,7 +45,7 @@ const Navbar = () => {
                         <NavLink mouseEnter={() => hoverEnterHandler(1)} mouseLeave={() => hoverLeaveHandler(1)} linkPath={"/"} pageName={"ABOUT"} />
                         <NavLink mouseEnter={() => hoverEnterHandler(2)} mouseLeave={() => hoverLeaveHandler(2)} linkPath={"/resume"} pageName={"RESUME"} />
                         <NavLink mouseEnter={() => hoverEnterHandler(3)} mouseLeave={() => hoverLeaveHandler(3)} linkPath={"/portfolio"} pageName={"PORTFOLIO"} />
-                        {/*<NavLink  mouseEnter={() => hoverEnterHandler(4) }  mouseLeave={() => hoverLeaveHandler(4) } linkPath={"/contact"} pageName={"CONTACT"} /> */}
+                        <NavLink  mouseEnter={() => hoverEnterHandler(4) }  mouseLeave={() => hoverLeaveHandler(4) } linkPath={"/contact"} pageName={"CONTACT"} /> 
                         <Pointer step={{ start: startPos, end: endPos }} />
                     </div>
                 </div>
